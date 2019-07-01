@@ -1,8 +1,13 @@
 class PostMessage {
+  static $inject = ['$state'];
 
-  constructor() {
-    window.onmessage = function(e) {
-      console.log('message from angular', e);
+  constructor(private $state) {
+    console.log($state)
+  }
+
+  init() {
+    window.onmessage = (e) => {
+      this.$state.go(e.data.url);
     }
   }
 

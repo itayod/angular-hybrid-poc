@@ -17,9 +17,12 @@ angular
   ])
   .config(router)
 
-angular.bootstrap(document, ['app'])
+angular.bootstrap(document, ['app']);
 
 if (module.hot) {
   module.hot.accept()
 }
 
+// window.onmessage = function(e) {
+//   console.log('message from angular', e);
+// }
