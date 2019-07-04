@@ -13,7 +13,7 @@ const ROUTE_URL_MAPPER = {
 @Component({
   selector: 'app-iframe',
   templateUrl: './iframe.component.html',
-  styleUrls: ['./iframe.component.css']
+  styleUrls: ['./iframe.component.scss']
 })
 export class IframeComponent implements OnInit {
   public src;

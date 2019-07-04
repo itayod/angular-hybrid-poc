@@ -1,4 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<app-nav>
+    {{isAngularRoute }}
+  <div id="main">
+    <router-outlet [class.hidden]="isAngularRoute"></router-outlet>
+    <app-iframe [class.hidden]="!isAngularRoute"></app-iframe>
+  </div>
+
+</app-nav>
 <h2>Here are some links to help you start: </h2>
 <ul>
   <li>
@@ -11,5 +19,3 @@
     <h2><a routerLink="todo">TODO</a></h2>
   </li>
 </ul>
-<router-outlet></router-outlet>
-<app-iframe></app-iframe>
