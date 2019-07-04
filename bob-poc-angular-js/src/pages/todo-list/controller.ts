@@ -1,3 +1,4 @@
+import {AngularJsRoutes} from '../../common.config';
 import PostMessage from '../../services/post-message'
 
 export default class TodoListCtrl {
@@ -10,8 +11,7 @@ export default class TodoListCtrl {
   visibleType = 'All'
 
   constructor(private log, private postMessage: PostMessage) {
-    this.log.info('Hello World!')
-    this.postMessage.send({data: 'hello from angular js'})
+    this.postMessage.send({route: AngularJsRoutes.TodoList})
   }
 
   handleSubmit(e): void {

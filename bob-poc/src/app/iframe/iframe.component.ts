@@ -2,11 +2,12 @@ import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
 import {ActivatedRoute, Router, NavigationStart} from '@angular/router';
 import {filter} from 'rxjs/operators';
+import {AngularJsRoutes} from '../../common.config';
 import {PostMessageService} from '../post-message.service';
 
 const ROUTE_URL_MAPPER = {
-  '/home': 'home',
-  '/todo': 'todolist',
+  '/home': AngularJsRoutes.Home,
+  '/todo': AngularJsRoutes.TodoList,
 };
 
 @Component({
@@ -26,7 +27,7 @@ export class IframeComponent implements OnInit {
     this.postMessage.setIframe(this.iframeRef.nativeElement);
     this.router.events.pipe(filter(e => e instanceof NavigationStart))
     .subscribe((e: NavigationStart) => {
-      this.postMessage.send({url: ROUTE_URL_MAPPER[e.url]});
+      this.postMessage.send({route: ROUTE_URL_MAPPER[e.url]});
       // this.src = this.sanitizer.bypassSecurityTrustResourceUrl(data.url
     });
   }

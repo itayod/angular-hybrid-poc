@@ -1,6 +1,9 @@
-import {Injectable, HostListener} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Router} from '@angular/router';
 import {Observable, fromEvent} from 'rxjs';
+import {filter} from 'rxjs/operators';
+import {MessageIds, INavigationEvent} from '../../../bob-poc-angular-js/src/common.config';
+import {AngularRoutes} from '../common.config';
 
 
 @Injectable({
@@ -8,27 +11,27 @@ import {Observable, fromEvent} from 'rxjs';
 })
 export class PostMessageService {
 
+  readonly ANGULAR_ID = MessageIds.Angular;
+  readonly ANGULAR_JS_ID = MessageIds.AngularJs;
+
   onMessage$: Observable<any>;
   private iframe: HTMLIFrameElement;
 
   constructor(private router: Router) {
     this.onMessage$ = fromEvent(window, 'message');
-    this.onMessage$.subscribe(e => {
-      this.router.navigateByUrl(e.data.url);
-      console.log('message from angular js', e)
+    this.onMessage$.pipe(
+      filter(e => e.data.id === this.ANGULAR_JS_ID),
+      filter(e => Object.values(AngularRoutes).includes(e.data.route))
+    ).subscribe(e => {
+      console.log('message from angular js', e);
+      this.router.navigateByUrl(e.data.route);
     });
   }
 
-  public send(data) {
+  public send(data: Partial<INavigationEvent>) {
     if (this.iframe.contentWindow) {
-      this.iframe.contentWindow.postMessage(data, 'http://localhost:3000');
+      this.iframe.contentWindow.postMessage({...data, id: this.ANGULAR_ID}, 'http://localhost:3000');
     }
-    // if (this.iframe) {
-    //   try {
-    //   } catch (e) {
-    //
-    //   }
-    // }
   }
 
   public setIframe(iframe: HTMLIFrameElement) {

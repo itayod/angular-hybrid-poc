@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="859cbed7-004c-42fd-8110-87729b3a28ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bob-poc-angular-js/src/components/Root/controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bob-poc-angular-js/src/common.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bob-poc/src/common.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bob-poc-angular-js/src/components/Root/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bob-poc-angular-js/src/components/Root/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bob-poc-angular-js/src/components/Root/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bob-poc-angular-js/src/components/Root/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bob-poc-angular-js/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bob-poc-angular-js/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bob-poc-angular-js/src/pages/todo-list/controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bob-poc-angular-js/src/pages/todo-list/controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bob-poc-angular-js/src/services/post-message.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bob-poc-angular-js/src/services/post-message.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bob-poc/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/bob-poc/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bob-poc/src/app/iframe/iframe.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bob-poc/src/app/iframe/iframe.component.ts" afterDir="false" />
@@ -24,10 +23,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/components/Root/controller.ts">
+        <entry file="file://$PROJECT_DIR$/bob-poc/src/app/post-message.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="229">
+              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,10 +48,15 @@
       <find>console.</find>
       <find>go(</find>
       <find>data</find>
+      <find>hello from angular js</find>
+      <find>ui</find>
+      <find>type</find>
+      <find>todo-list</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Itay\projects\angular-hybrid-poc\bob-poc-angular-js\src</dir>
       <dir>C:\Users\Itay\projects\angular-hybrid-poc\bob-poc\src</dir>
+      <dir>C:\Users\Itay\projects\angular-hybrid-poc\bob-poc-angular-js\src\components</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -62,12 +69,19 @@
         <option value="$PROJECT_DIR$/bob-poc/browserslist" />
         <option value="$PROJECT_DIR$/bob-poc-angular-js/src/index.ts" />
         <option value="$PROJECT_DIR$/bob-poc-angular-js/src/components/Root/index.ts" />
-        <option value="$PROJECT_DIR$/bob-poc/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/bob-poc/src/app/iframe/iframe.component.ts" />
-        <option value="$PROJECT_DIR$/bob-poc/src/app/post-message.service.ts" />
-        <option value="$PROJECT_DIR$/bob-poc-angular-js/src/services/post-message.ts" />
         <option value="$PROJECT_DIR$/bob-poc-angular-js/src/components/Root/index.html" />
         <option value="$PROJECT_DIR$/bob-poc-angular-js/src/components/Root/controller.ts" />
+        <option value="$PROJECT_DIR$/bob-poc/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/bob-poc-angular-js/src/config/routes.config.ts" />
+        <option value="$PROJECT_DIR$/bob-poc-angular-js/package.json" />
+        <option value="$PROJECT_DIR$/common..config.ts" />
+        <option value="$PROJECT_DIR$/bob-poc-angular-js/webpack.config.dev.js" />
+        <option value="$PROJECT_DIR$/bob-poc-angular-js/src/pages/todo-list/controller.ts" />
+        <option value="$PROJECT_DIR$/bob-poc/src/app/iframe/iframe.component.ts" />
+        <option value="$PROJECT_DIR$/bob-poc-angular-js/src/services/post-message.ts" />
+        <option value="$PROJECT_DIR$/bob-poc/src/common.config.ts" />
+        <option value="$PROJECT_DIR$/bob-poc-angular-js/src/common.config.ts" />
+        <option value="$PROJECT_DIR$/bob-poc/src/app/post-message.service.ts" />
       </list>
     </option>
   </component>
@@ -95,137 +109,6 @@
               <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
               <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="typescript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="typescript" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="iframe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc-angular-js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc-angular-js" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc-angular-js" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@uirouter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc-angular-js" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@uirouter" type="462c0819:PsiDirectoryNode" />
-              <item name="angularjs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc-angular-js" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@uirouter" type="462c0819:PsiDirectoryNode" />
-              <item name="angularjs" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc-angular-js" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc-angular-js" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc-angular-js" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Root" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc-angular-js" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc-angular-js" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="filters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc-angular-js" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-hybrid-poc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-hybrid-poc" type="462c0819:PsiDirectoryNode" />
-              <item name="bob-poc-angular-js" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -235,14 +118,24 @@
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bob-poc-angular-js" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="ts.external.directory.path" value="C:\Users\Itay\projects\angular-hybrid-poc\bob-poc\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Itay\projects\angular-hybrid-poc\bob-poc\src" />
+      <recent name="C:\Users\Itay\projects\angular-hybrid-poc\bob-poc-angular-js\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Itay\projects\angular-hybrid-poc\bob-poc-angular-js" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -266,16 +159,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561990964406</updated>
-      <workItem from="1561990965734" duration="3008000" />
+      <workItem from="1561990965734" duration="3098000" />
+      <workItem from="1562230643716" duration="4113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3008000" />
+    <option name="totallyTimeSpent" value="7211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49759614" visible="true" weight="0.18097754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -291,7 +184,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4993395" weight="0.59688824" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32956153" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993395" visible="true" weight="0.30410182" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993395" visible="true" weight="0.3026874" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5006605" side_tool="true" weight="0.29985857" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32956153" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -363,13 +256,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/pages/todo-list/controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/pages/home/view1/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -394,61 +280,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bob-poc/node_modules/typescript/lib/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="8816" column="4" selection-start-line="8816" selection-start-column="4" selection-end-line="8816" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bob-poc/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="71" lean-forward="true" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bob-poc/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bob-poc/src/app/iframe/iframe.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bob-poc/src/app/post-message.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/services/post-message.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -459,17 +294,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/config/routes.config.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/components/Root/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/components/Root/controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc/src/app/feature1/feature1/feature1.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc/src/app/iframe/iframe.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/services/log.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -480,10 +348,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/components/Root/controller.ts">
+    <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/config/routes.config.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="60">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/webpack.config.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc/node_modules/typescript/lib/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="10229" column="10" selection-start-line="10229" selection-start-column="10" selection-end-line="10229" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/services/post-message.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/pages/todo-list/controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc/src/common.config.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc-angular-js/src/common.config.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc/src/app/iframe/iframe.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob-poc/src/app/post-message.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
